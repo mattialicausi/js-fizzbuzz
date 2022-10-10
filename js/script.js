@@ -20,7 +20,7 @@ for(let i = 1; i <= 100; i++){
    if (((i % 3) == 0) && ((i % 5) == 0)){
     console.log('fizzbuzz');
     let myBox = document.createElement('div'); 
-    myBox.className = "boxes col-2  mybox-fizzbuzz"
+    myBox.className = "boxes col-2 rounded-pill mybox-fizzbuzz";
     myBox.append('fizzbuzz');
     riga.append(myBox);
     
@@ -28,14 +28,14 @@ for(let i = 1; i <= 100; i++){
    } else if((i % 5) == 0){
     console.log('buzz');
     let myBox = document.createElement('div'); 
-    myBox.className = "boxes col-2   mybox-buzz"
+    myBox.className = "boxes col-2 rounded-pill mybox-buzz"
     myBox.append('buzz');
     riga.append(myBox);
 
    } else if((i % 3) == 0){
     console.log('fizz');
     let myBox = document.createElement('div'); 
-    myBox.className = "boxes col-2 mybox-fizz"
+    myBox.className = "boxes col-2 rounded-pill  mybox-fizz"
     myBox.append('fizz');
     riga.append(myBox);
 
@@ -43,7 +43,7 @@ for(let i = 1; i <= 100; i++){
    } else{
     console.log(i);
     let myBox = document.createElement('div'); 
-    myBox.className = "boxes col-2 mybox-number"
+    myBox.className = "boxes col-2 rounded-pill mybox-number"
     myBox.append('Box ' + i);
     riga.append(myBox);
 

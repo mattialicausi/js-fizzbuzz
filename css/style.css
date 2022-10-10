@@ -1,24 +1,33 @@
+.container-max{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #FFFBDB;
+}
+
 .boxes{
     height: 100px;
-    width: 100px;
    text-align: center;
    line-height: center;
    color: white;
    margin: 3px;
+   line-height: 100px;
 }
 
 .mybox-fizz{
-    background-color: blue;
+    background-color: #CDC7E5;
 }
 
 .mybox-buzz{
-    background-color: chartreuse;
+    background-color: #7776BC;
 }
 
 .mybox-fizzbuzz{
-    background-color: orange;
+    background-color: #FFEC51;
 }
 
 .mybox-number{
-    background-color: gray;
+    background-color: #FF674D;
 }
