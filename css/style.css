@@ -1,7 +1,8 @@
-.col-2 div{
-    height: 100px;
-    width: 100px;
-    color: white;
+.boxes{
+    /* height: 100px;
+    width: 100px; */
+    padding: 5px;
+    border: 1px solid red;
 }
 
 .mybox-fizz{

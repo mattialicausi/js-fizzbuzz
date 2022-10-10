@@ -7,11 +7,17 @@
 
 // Consigli del giorno:
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
-// BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
+// x BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 // BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
 let riga = document.querySelector('div.row');
-const myBox = document.createElement("div");
+
+let myBox = document.createElement('div'); 
+myBox.className = "col-2";
+
+
+
+
 
 // CREO CICLO FOR PER STAMPARE IN CONSOLE I MULTIPLI DI 3 E 5 - 3 - 5
 
@@ -21,30 +27,33 @@ for(let i = 1; i <= 100; i++){
     console.log('fizzbuzz');
     myBox.append('fizzbuzz');
     riga.append(myBox);
+    
+    // i.className = "boxes"
 
    } else if((i % 5) == 0){
     console.log('buzz');
     myBox.append('buzz');
     riga.append(myBox);
+    // i = myBox;
+    // i.className = "boxes"
 
 
    } else if((i % 3) == 0){
     console.log('fizz');
     myBox.append('fizz');
     riga.append(myBox);
-
+    // i = myBox;
+    // i.className = "boxes"
 
    } else{
     console.log(i);
     myBox.append('Box ' + i);
     riga.append(myBox);
-
+    // i = myBox;
+    // i.className = "boxes"
 
    }
 
-
-   
-   
 
 }
 
