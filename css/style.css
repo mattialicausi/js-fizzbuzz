@@ -1,0 +1,18 @@
+.col-2 div{
+    height: 100px;
+    width: 100px;
+    color: white;
+}
+
+.mybox-fizz{
+    background-color: blue;
+}
+
+.mybox-buzz{
+    background-color: chartreuse;
+}
+
+.mybox-fizzbuzz{
+    background-color: orange;
+}
+
