@@ -8,7 +8,7 @@ body{
 }
 
 .boxes{
-    height: 100px;
+   height: 100px;
    text-align: center;
    line-height: center;
    color: white;
@@ -31,3 +31,4 @@ body{
 .mybox-number{
     background-color: #FF674D;
 }
+
