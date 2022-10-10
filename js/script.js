@@ -12,12 +12,6 @@
 
 let riga = document.querySelector('div.row');
 
-let myBox = document.createElement('div'); 
-myBox.className = "col-2";
-
-
-
-
 
 // CREO CICLO FOR PER STAMPARE IN CONSOLE I MULTIPLI DI 3 E 5 - 3 - 5
 
@@ -25,32 +19,33 @@ for(let i = 1; i <= 100; i++){
 
    if (((i % 3) == 0) && ((i % 5) == 0)){
     console.log('fizzbuzz');
+    let myBox = document.createElement('div'); 
+    myBox.className = "boxes col-2  mybox-fizzbuzz"
     myBox.append('fizzbuzz');
     riga.append(myBox);
     
-    // i.className = "boxes"
 
    } else if((i % 5) == 0){
     console.log('buzz');
+    let myBox = document.createElement('div'); 
+    myBox.className = "boxes col-2   mybox-buzz"
     myBox.append('buzz');
     riga.append(myBox);
-    // i = myBox;
-    // i.className = "boxes"
-
 
    } else if((i % 3) == 0){
     console.log('fizz');
+    let myBox = document.createElement('div'); 
+    myBox.className = "boxes col-2 mybox-fizz"
     myBox.append('fizz');
     riga.append(myBox);
-    // i = myBox;
-    // i.className = "boxes"
+
 
    } else{
     console.log(i);
+    let myBox = document.createElement('div'); 
+    myBox.className = "boxes col-2 mybox-number"
     myBox.append('Box ' + i);
     riga.append(myBox);
-    // i = myBox;
-    // i.className = "boxes"
 
    }
 

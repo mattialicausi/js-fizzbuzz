@@ -1,8 +1,10 @@
 .boxes{
-    /* height: 100px;
-    width: 100px; */
-    padding: 5px;
-    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+   text-align: center;
+   line-height: center;
+   color: white;
+   margin: 3px;
 }
 
 .mybox-fizz{
@@ -17,3 +19,6 @@
     background-color: orange;
 }
 
+.mybox-number{
+    background-color: gray;
+}
