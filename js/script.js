@@ -11,6 +11,7 @@
 // BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
 let riga = document.querySelector('div.row');
+const myBox = document.createElement("div");
 
 // CREO CICLO FOR PER STAMPARE IN CONSOLE I MULTIPLI DI 3 E 5 - 3 - 5
 
@@ -18,18 +19,32 @@ for(let i = 1; i <= 100; i++){
 
    if (((i % 3) == 0) && ((i % 5) == 0)){
     console.log('fizzbuzz');
+    myBox.append('fizzbuzz');
+    riga.append(myBox);
+
    } else if((i % 5) == 0){
     console.log('buzz');
+    myBox.append('buzz');
+    riga.append(myBox);
+
+
    } else if((i % 3) == 0){
     console.log('fizz');
+    myBox.append('fizz');
+    riga.append(myBox);
+
+
    } else{
     console.log(i);
+    myBox.append('Box ' + i);
+    riga.append(myBox);
+
+
    }
 
 
-   const myBox = document.createElement("div");
-   myBox.append('Box' + i);
-   riga.append(myBox);
+   
+   
 
 }
 
